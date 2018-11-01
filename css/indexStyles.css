@@ -1,0 +1,223 @@
+:root {
+  --background-color: #28292d;
+  --secondary-bg: #656565;
+  --secondary-bg-light: #868686;
+  --text-color: #cdd3f7;
+  --low-opacity: rgba(205, 211, 247, .14);
+}
+
+* {
+  margin: 0;
+  padding: 0rem;
+}
+
+html,
+body {
+  height: 100%;
+  /* background-color: var(--background-color); */
+
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: block;
+
+  height: 100%;
+}
+
+.wrapper section {
+  height: 100%;
+}
+
+.navbar {
+  position: fixed;
+
+  display: flex;
+
+  width: 100%;
+  padding: 0rem 1rem;
+
+  background-color: var(--secondary-bg);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+
+  width: 25%;
+  padding: 1rem;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: var(--text-color);
+}
+
+.navbar a:hover {
+  background-color: var(--secondary-bg-light);
+}
+
+.navbar a:active {
+  background-color: var(--secondary-bg-light);
+}
+
+.navbar div {
+  width: 25%;
+  padding: 1rem;
+
+  color: var(--text-color);
+}
+
+.body {
+  padding: 4rem .5rem;
+}
+
+.text {
+  display: grid;
+
+  color: var(--text-color);
+
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: .5rem;
+}
+
+.body header {
+  text-align: center;
+
+  color: var(--text-color);
+}
+
+.text div {
+  padding: 1rem 0rem;
+
+  text-align: left;
+}
+
+.foutline {
+  background-color: var(--background-color);
+  background-image: url('../images/the-witcher3-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.soutline {
+  background-color: var(--background-color);
+}
+
+.foutline div {
+  font-size: 1.2rem;
+}
+
+.foutline img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.basicGroups {
+  padding: 4rem .5rem;
+}
+
+.txt {
+  background: var(--secondary-bg);
+}
+
+.txt div {
+  padding: 0rem .5rem;
+}
+
+.tabs {
+  display: block;
+
+  padding: 0rem;
+  /* background-color: var(--secondary-bg); */
+
+  background-image: url('../images/Ciri.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tabs button {
+  font-size: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+
+  display: block;
+
+  width: 100%;
+  padding: 1.5rem .5rem;
+
+  color: var(--background-color);
+  border: none;
+  outline: none;
+  background-color: Transparent;
+}
+
+.tabs button:hover {
+  background-color: var(--low-opacity);
+}
+
+.outLink {
+  display: block;
+
+  width: 25%;
+  padding: 1rem 1rem;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: var(--text-color);
+  background-color: var(--secondary-bg);
+}
+
+.outLink:hover {
+  background-color: var(--secondary-bg-light);
+}
+
+#prod ul {
+  list-style: none;
+}
+
+.txt {
+  background-image: url('../images/netflix-logo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.info p,
+ul {
+  font-size: 1.3rem;
+}
+
+.img {
+  max-width: 100% !important;
+  height: auto !important;
+
+  border-radius: .5rem;
+  background-image: url('../images/Freya Allan.jpg') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a[tool]::before {
+  content: attr(tool);
+  position: absolute;
+  display: block;
+  bottom: 243px;
+  left: 125px;
+  background: var(--secondary-bg);
+  padding: 0.5rem;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+a[tool]:hover::before {
+  transform: scale(1);
+  transition: 0.3s;
+}
